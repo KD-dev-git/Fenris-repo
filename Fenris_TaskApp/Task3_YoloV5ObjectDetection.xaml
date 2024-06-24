@@ -1,0 +1,9 @@
+﻿<Window x:Class="Fenris_TaskApp.Task3_YoloV5ObjectDetection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="YOLOv5 Object Detection" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnOpenFile" Content="Select Image" Width="120" Height="30" Click="BtnOpenFile_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <Image x:Name="imgDisplay" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" Stretch="Uniform" Width="760" Height="380"/>
+    </Grid>
+</Window>
