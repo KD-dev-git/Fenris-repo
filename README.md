@@ -55,9 +55,10 @@ The project uses the following NuGet packages:
 - Object detection targets only the zebra class using a pre-trained YOLOv5s ONNX model. The class index can be changed in code to detect other objects.
 - A red bounding box is drawn around detected zebras.
 - Since no error logging or exception handling flow is provided, try-catch blocks are omitted.
+- The onnx file of the model has to be created and added to the project folder (Steps mentioned in approach). This could not be committed to git due to filesize.
 
 **Approach:**
-- Clone the YOLOv5 repository from [ultralytics](https://github.com/ultralytics/yolov5) and export the weights of the pre-trained YOLOv5s model to ONNX format using the command: `python export.py --weights yolov5s.pt --include onnx`.
+- Clone the YOLOv5 repository from [ultralytics](https://github.com/ultralytics/yolov5) and export the weights of the pre-trained YOLOv5s model to ONNX format using the command: `python export.py --weights yolov5s.pt --include onnx`. 
 - Create a basic XAML design with a button and image control.
 - Add the ONNX model file to the application folder and write code to access this file. Use the `Microsoft.ML` package to initialize the prediction model.
 - Instantiate `MLContext` and create a model pipeline that transforms the input image data to the format required by the ONNX model.
